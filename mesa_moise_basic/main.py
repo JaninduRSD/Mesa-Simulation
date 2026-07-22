@@ -3,8 +3,8 @@ from model import GuessingGameModel
 
 def main():
     model = GuessingGameModel(
-        num_explorers=3,
-        max_number=20,
+        num_explorers=1000,
+        max_number=10000,
         seed=7,
     )
 
@@ -12,7 +12,7 @@ def main():
 
     model.organization.describe()
 
-    max_steps = 10
+    max_steps = 100
 
     for _ in range(max_steps):
         if model.completed:
